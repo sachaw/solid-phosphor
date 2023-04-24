@@ -1,4 +1,4 @@
 node_modules
 dist
-src/icons/**/*.tsx
+src/icons/**/*.ts*
 src/index.ts

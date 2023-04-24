@@ -6,6 +6,7 @@
 	"license": "GPL-3.0-only",
 	"scripts": {
 		"build": "tsc",
+		"clean": "tsx ./bin/clean.ts",
 		"generate": "tsx ./bin/generator.ts"
 	},
 	"devDependencies": {

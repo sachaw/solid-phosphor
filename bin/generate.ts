@@ -1,25 +1,12 @@
-import {
-	readFileSync,
-	writeFile,
-	unlinkSync,
-	readdirSync,
-	existsSync,
-} from "node:fs";
+import { readFileSync, writeFile, existsSync } from "node:fs";
 import { join } from "node:path";
 import { icons } from "@phosphor-icons/core";
 
-const variants = ["bold", "duotone", "fill", "light", "regular", "thin"];
+export const variants = ["bold", "duotone", "fill", "light", "regular", "thin"];
 
 const iconSRCPath = "src/icons";
 
 variants.map((variant) => {
-	const files = readdirSync(join(process.cwd(), iconSRCPath, variant));
-	files.map((file) => {
-		if (file.endsWith(".tsx") || file.endsWith(".ts")) {
-			unlinkSync(join(process.cwd(), join(iconSRCPath, variant, file)));
-		}
-	});
-
 	icons.map((icon) => {
 		const iconPath = `node_modules/@phosphor-icons/core/assets/${variant}/${
 			icon.name
