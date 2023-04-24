@@ -2,7 +2,7 @@
 	"name": "solid-phosphor",
 	"version": "1.0.0",
 	"type": "module",
-	"description": "Phosphor icons for Solid",
+	"description": "Phosphor icons for SolidJS",
 	"license": "GPL-3.0-only",
 	"scripts": {
 		"build": "tsc",
