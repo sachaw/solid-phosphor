@@ -10,10 +10,10 @@
     "generate": "tsx ./bin/generate.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
+    "@types/node": "^20.1.2",
     "rome": "^12.0.0",
-    "solid-js": "^1.7.3",
-    "tsx": "^3.12.6",
+    "solid-js": "^1.7.5",
+    "tsx": "^3.12.7",
     "typescript": "^5.0.4"
   },
   "dependencies": {
@@ -22,7 +22,6 @@
   "peerDependencies": {
     "solid-js": "^1.7.3"
   },
-  "browser": {},
   "exports": {
     ".": {
       "import": {

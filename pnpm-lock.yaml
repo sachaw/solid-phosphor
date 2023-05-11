@@ -7,17 +7,17 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^18.16.0
-    version: 18.16.0
+    specifier: ^20.1.2
+    version: 20.1.2
   rome:
     specifier: ^12.0.0
     version: 12.0.0
   solid-js:
-    specifier: ^1.7.3
-    version: 1.7.3
+    specifier: ^1.7.5
+    version: 1.7.5
   tsx:
-    specifier: ^3.12.6
-    version: 3.12.6
+    specifier: ^3.12.7
+    version: 3.12.7
   typescript:
     specifier: ^5.0.4
     version: 5.0.4
@@ -295,8 +295,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node@18.16.0:
-    resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
+  /@types/node@20.1.2:
+    resolution: {integrity: sha512-CTO/wa8x+rZU626cL2BlbCDzydgnFNgc19h4YvizpTO88MFQxab8wqisxaofQJ/9bLGugRdWIuX/TbIs6VVF6g==}
     dev: true
 
   /buffer-from@1.1.2:
@@ -368,8 +368,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /solid-js@1.7.3:
-    resolution: {integrity: sha512-4hwaF/zV/xbNeBBIYDyu3dcReOZBECbO//mrra6GqOrKy4Soyo+fnKjpZSa0nODm6j1aL0iQRh/7ofYowH+jzw==}
+  /solid-js@1.7.5:
+    resolution: {integrity: sha512-GfJ8na1e9FG1oAF5xC24BM+ATLym0sfH+ZblkbBFpueYdq3fWAoA5Ve+jGeIeLI7jmMGfa0rUaKruszNm2sH8w==}
     dependencies:
       csstype: 3.1.2
       seroval: 0.5.1
@@ -387,8 +387,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /tsx@3.12.6:
-    resolution: {integrity: sha512-q93WgS3lBdHlPgS0h1i+87Pt6n9K/qULIMNYZo07nSeu2z5QE2CellcAZfofVXBo2tQg9av2ZcRMQ2S2i5oadQ==}
+  /tsx@3.12.7:
+    resolution: {integrity: sha512-C2Ip+jPmqKd1GWVQDvz/Eyc6QJbGfE7NrR3fx5BpEHMZsEHoIxHL1j+lKdGobr8ovEyqeNkPLSKp6SCSOt7gmw==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.2

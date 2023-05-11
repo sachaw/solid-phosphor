@@ -41,6 +41,7 @@ export const ${icon.pascal_name}: Component<PhosphorIcon> = (props) => {
 			width="24px"
 			{...props}
 		>
+      <title>${icon.name}</title>
 			${svg}
 		</svg>
 	);

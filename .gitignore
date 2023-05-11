@@ -1,4 +1,3 @@
 node_modules
 dist
 src/icons/**/*.ts*
-src/index.ts
