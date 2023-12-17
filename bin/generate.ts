@@ -4,7 +4,7 @@ import { icons } from "@phosphor-icons/core";
 
 export const variants = ["bold", "duotone", "fill", "light", "regular", "thin"];
 
-const iconSRCPath = "src/icons";
+const iconSrcPath = "src/icons";
 
 variants.map((variant) => {
   icons.map((icon) => {
@@ -48,7 +48,7 @@ export const ${icon.pascal_name}: Component<PhosphorIcon> = (props) => {
 };`;
 
     writeFile(
-      join(process.cwd(), `${iconSRCPath}/${variant}/${icon.pascal_name}.tsx`),
+      join(process.cwd(), `${iconSrcPath}/${variant}/${icon.pascal_name}.tsx`),
       template,
       (err) => {
         if (err) {
@@ -61,7 +61,8 @@ export const ${icon.pascal_name}: Component<PhosphorIcon> = (props) => {
   });
 });
 
-variants.forEach((variant) => {
+for (const variant of variants) {
+  
   const variantIndexFile = `// Generated file, do not edit
 ${icons
   .map((icon) => {
@@ -87,4 +88,4 @@ ${icons
       console.log(`index.ts file for ${variant} created successfully.`);
     },
   );
-});
+}
