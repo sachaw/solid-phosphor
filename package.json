@@ -22,6 +22,7 @@
   "peerDependencies": {
     "solid-js": "^1.7.3"
   },
+  "files": ["dist", ".npmrc"],
   "exports": {
     ".": {
       "import": {
