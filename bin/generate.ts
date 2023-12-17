@@ -29,9 +29,9 @@ variants.map((variant) => {
 
     const template = `//Generated file, do not edit
 import { Component } from "solid-js";
-import { PhosphorIcon } from "../../index.js";
+import { PhosphorIconProps } from "../../index.js";
 
-export const ${icon.pascal_name}: Component<PhosphorIcon> = (props) => {
+export const ${icon.pascal_name}: Component<PhosphorIconProps> = (props) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

@@ -5,8 +5,10 @@ import * as FillIcons from "./icons/fill/index.js";
 import * as LightIcons from "./icons/light/index.js";
 import * as RegularIcons from "./icons/regular/index.js";
 import * as ThinIcons from "./icons/thin/index.js";
+import { Component } from "solid-js";
 
-type PhosphorIcon = JSX.SvgSVGAttributes<SVGSVGElement>;
+type PhosphorIconProps = JSX.SvgSVGAttributes<SVGSVGElement>;
+type PhosphorIcon = Component<PhosphorIconProps>;
 
 export {
   BoldIcons,
@@ -15,5 +17,6 @@ export {
   LightIcons,
   RegularIcons,
   ThinIcons,
+  PhosphorIconProps,
   PhosphorIcon,
 };
