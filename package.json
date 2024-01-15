@@ -10,19 +10,22 @@
     "generate": "tsx ./bin/generate.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.10.4",
-    "biome": "^0.3.3",
-    "solid-js": "^1.8.7",
-    "tsx": "^4.6.2",
+    "@biomejs/biome": "^1.5.1",
+    "@types/node": "^20.11.1",
+    "solid-js": "^1.8.11",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@phosphor-icons/core": "^2.0.3"
+    "@phosphor-icons/core": "^2.0.4"
   },
   "peerDependencies": {
     "solid-js": "^1.7.3"
   },
-  "files": ["dist", ".npmrc"],
+  "files": [
+    "dist",
+    ".npmrc"
+  ],
   "exports": {
     ".": {
       "import": {
