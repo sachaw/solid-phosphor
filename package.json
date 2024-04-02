@@ -10,14 +10,14 @@
     "generate": "tsx ./bin/generate.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.1",
-    "@types/node": "^20.11.1",
-    "solid-js": "^1.8.11",
-    "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
+    "@biomejs/biome": "^1.6.3",
+    "@types/node": "^20.12.2",
+    "solid-js": "^1.8.16",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@phosphor-icons/core": "^2.0.4"
+    "@phosphor-icons/core": "^2.1.1"
   },
   "peerDependencies": {
     "solid-js": "^1.7.3"
