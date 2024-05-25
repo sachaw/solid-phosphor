@@ -61,33 +61,3 @@ export const ${icon.pascal_name}Icon: Component<PhosphorIconProps> = (props) => 
     );
   });
 });
-
-for (const variant of variants) {
-  const variantIndexFile = `// Generated file, do not edit
-${
-    icons
-      .map((icon) => {
-        const iconPath = join(
-          process.cwd(),
-          `src/icons/${variant}/${icon.pascal_name}.tsx`,
-        );
-        const exists = existsSync(iconPath);
-        return exists
-          ? `export { ${icon.pascal_name} as ${icon.pascal_name}Icon, ${icon.pascal_name} } from "./${icon.pascal_name}.jsx";`
-          : "";
-      })
-      .join("\n")
-  }
-`;
-
-  writeFile(
-    join(process.cwd(), `src/icons/${variant}/index.ts`),
-    variantIndexFile,
-    (err) => {
-      if (err) {
-        return console.log(`Could not write index.ts for ${variant}`);
-      }
-      console.log(`index.ts file for ${variant} created successfully.`);
-    },
-  );
-}
