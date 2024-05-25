@@ -28,11 +28,11 @@ variants.map((variant) => {
       data.lastIndexOf("><") + 1,
     );
 
-    const template = `//Generated file, do not edit
+    const template = `
 import { Component } from "solid-js";
 import { PhosphorIconProps } from "../../index.js";
 
-export const ${icon.pascal_name}: Component<PhosphorIconProps> = (props) => {
+export const ${icon.pascal_name}Icon: Component<PhosphorIconProps> = (props) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
