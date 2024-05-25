@@ -1,4 +1,4 @@
-import { unlinkSync, readdirSync } from "node:fs";
+import { readdirSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 import { variants } from "./generate.js";
 

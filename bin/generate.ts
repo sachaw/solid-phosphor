@@ -1,4 +1,4 @@
-import { readFileSync, writeFile, existsSync } from "node:fs";
+import { existsSync, readFileSync, writeFile } from "node:fs";
 import { join } from "node:path";
 import { icons } from "@phosphor-icons/core";
 
@@ -8,9 +8,10 @@ const iconSrcPath = "src/icons";
 
 variants.map((variant) => {
   icons.map((icon) => {
-    const iconPath = `node_modules/@phosphor-icons/core/assets/${variant}/${
-      icon.name
-    }${variant !== "regular" ? `-${variant}` : ""}.svg`;
+    const iconPath =
+      `node_modules/@phosphor-icons/core/assets/${variant}/${icon.name}${
+        variant !== "regular" ? `-${variant}` : ""
+      }.svg`;
 
     const exists = existsSync(join(process.cwd(), iconPath));
 
@@ -62,20 +63,21 @@ export const ${icon.pascal_name}: Component<PhosphorIconProps> = (props) => {
 });
 
 for (const variant of variants) {
-  
   const variantIndexFile = `// Generated file, do not edit
-${icons
-  .map((icon) => {
-    const iconPath = join(
-      process.cwd(),
-      `src/icons/${variant}/${icon.pascal_name}.tsx`,
-    );
-    const exists = existsSync(iconPath);
-    return exists
-      ? `export { ${icon.pascal_name} as ${icon.pascal_name}Icon, ${icon.pascal_name} } from "./${icon.pascal_name}.jsx";`
-      : "";
-  })
-  .join("\n")}
+${
+    icons
+      .map((icon) => {
+        const iconPath = join(
+          process.cwd(),
+          `src/icons/${variant}/${icon.pascal_name}.tsx`,
+        );
+        const exists = existsSync(iconPath);
+        return exists
+          ? `export { ${icon.pascal_name} as ${icon.pascal_name}Icon, ${icon.pascal_name} } from "./${icon.pascal_name}.jsx";`
+          : "";
+      })
+      .join("\n")
+  }
 `;
 
   writeFile(

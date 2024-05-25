@@ -10,11 +10,11 @@
     "generate": "tsx ./bin/generate.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.6.3",
-    "@types/node": "^20.12.2",
-    "solid-js": "^1.8.16",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "@biomejs/biome": "^1.7.3",
+    "@types/node": "^20.12.12",
+    "solid-js": "^1.8.17",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@phosphor-icons/core": "^2.1.1"
@@ -33,41 +33,29 @@
         "default": "./dist/index.js"
       }
     },
-    "./bold": {
-      "import": {
-        "types": "./dist/icons/bold/index.d.ts",
-        "default": "./dist/icons/bold/index.js"
-      }
+    "./bold*": {
+      "import": "./dist/icons/bold/*.js",
+      "types": "./dist/icons/bold/*.d.ts"
     },
-    "./duotone": {
-      "import": {
-        "types": "./dist/icons/duotone/index.d.ts",
-        "default": "./dist/icons/duotone/index.js"
-      }
+    "./duotone*": {
+      "import": "./dist/icons/duotone/*.js",
+      "types": "./dist/icons/duotone/*.d.ts"
     },
-    "./fill": {
-      "import": {
-        "types": "./dist/icons/fill/index.d.ts",
-        "default": "./dist/icons/fill/index.js"
-      }
+    "./fill*": {
+      "import": "./dist/icons/fill/*.js",
+      "types": "./dist/icons/fill/*.d.ts"
     },
-    "./light": {
-      "import": {
-        "types": "./dist/icons/light/index.d.ts",
-        "default": "./dist/icons/light/index.js"
-      }
+    "./light*": {
+      "import": "./dist/icons/light/*.js",
+      "types": "./dist/icons/light/*.d.ts"
     },
-    "./regular": {
-      "import": {
-        "types": "./dist/icons/regular/index.d.ts",
-        "default": "./dist/icons/regular/index.js"
-      }
+    "./regular*": {
+      "import": "./dist/icons/regular/*.js",
+      "types": "./dist/icons/regular/*.d.ts"
     },
-    "./thin": {
-      "import": {
-        "types": "./dist/icons/thin/index.d.ts",
-        "default": "./dist/icons/thin/index.js"
-      }
+    "./thin*": {
+      "import": "./dist/icons/thin/*.js",
+      "types": "./dist/icons/thin/*.d.ts"
     }
   },
   "main": "./dist/index.js",
