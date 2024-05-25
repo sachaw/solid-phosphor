@@ -1,6 +1,6 @@
 {
   "name": "solid-phosphor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "Phosphor icons for SolidJS",
   "license": "GPL-3.0-only",
@@ -26,35 +26,9 @@
     "dist"
   ],
   "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/src/index.d.ts",
-        "default": "./dist/src/index.js"
-      }
-    },
-    "./bold*": {
-      "import": "./dist/icons/bold/*.js",
-      "types": "./dist/icons/bold/*.d.ts"
-    },
-    "./duotone*": {
-      "import": "./dist/icons/duotone/*.js",
-      "types": "./dist/icons/duotone/*.d.ts"
-    },
-    "./fill*": {
-      "import": "./dist/icons/fill/*.js",
-      "types": "./dist/icons/fill/*.d.ts"
-    },
-    "./light*": {
-      "import": "./dist/icons/light/*.js",
-      "types": "./dist/icons/light/*.d.ts"
-    },
-    "./regular*": {
-      "import": "./dist/icons/regular/*.js",
-      "types": "./dist/icons/regular/*.d.ts"
-    },
-    "./thin*": {
-      "import": "./dist/icons/thin/*.js",
-      "types": "./dist/icons/thin/*.d.ts"
+    "./*": {
+      "import": "./dist/src/*.js",
+      "types": "./dist/src/*.d.ts"
     }
   }
 }
