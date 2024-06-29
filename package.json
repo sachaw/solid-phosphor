@@ -1,6 +1,6 @@
 {
   "name": "solid-phosphor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "description": "Phosphor icons for SolidJS",
   "license": "GPL-3.0-only",
@@ -10,11 +10,11 @@
     "generate": "tsx ./bin/generate.ts"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@types/node": "^20.12.12",
-    "solid-js": "^1.8.17",
-    "tsx": "^4.11.0",
-    "typescript": "^5.4.5"
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.9",
+    "solid-js": "^1.8.18",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.2"
   },
   "dependencies": {
     "@phosphor-icons/core": "^2.1.1"
@@ -27,8 +27,8 @@
   ],
   "exports": {
     "./*": {
-      "import": "./*.js",
-      "types": "./*.d.ts"
+      "import": "./dist/icons/*.js",
+      "types": "./dist/icons/*.d.ts"
     }
   }
 }
