@@ -60,4 +60,18 @@ export const ${icon.pascal_name}Icon: Component<PhosphorIconProps> = (props) => 
       },
     );
   });
+
+  const indexTemplate = icons.map((icon) => {
+    return `export { ${icon.pascal_name}Icon } from './${icon.pascal_name}.jsx';`;
+  }).join('\n');
+
+  writeFile(
+    join(process.cwd(), `${iconSrcPath}/${variant}/index.ts`),
+    indexTemplate,
+    (err) => {
+      if (err) {
+        return console.log(`Could not write index file for ${variant}.`);
+      }
+    },
+  );
 });
