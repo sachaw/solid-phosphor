@@ -1,6 +1,6 @@
 {
   "name": "solid-phosphor",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "type": "module",
   "description": "Phosphor icons for SolidJS",
   "license": "GPL-3.0-only",
@@ -31,28 +31,28 @@
       "types": "./dist/src/index.d.ts"
     },
     "./bold": {
-      "import": "./dist/src/icons/bold.index.js",
-      "types": "./dist/src/icons/bold.index.d.ts"
+      "import": "./dist/src/icons/bold/index.js",
+      "types": "./dist/src/icons/bold/index.d.ts"
     },
     "./duotone": {
-      "import": "./dist/src/icons/duotone.index.js",
-      "types": "./dist/src/icons/duotone.index.d.ts"
+      "import": "./dist/src/icons/duotone/index.js",
+      "types": "./dist/src/icons/duotone/index.d.ts"
     },
     "./fill": {
-      "import": "./dist/src/icons/fill.index.js",
-      "types": "./dist/src/icons/fill.index.d.ts"
+      "import": "./dist/src/icons/fill/index.js",
+      "types": "./dist/src/icons/fill/index.d.ts"
     },
     "./light": {
-      "import": "./dist/src/icons/light.index.js",
-      "types": "./dist/src/icons/light.index.d.ts"
+      "import": "./dist/src/icons/light/index.js",
+      "types": "./dist/src/icons/light/index.d.ts"
     },
     "./regular": {
-      "import": "./dist/src/icons/regular.index.js",
-      "types": "./dist/src/icons/regular.index.d.ts"
+      "import": "./dist/src/icons/regular/index.js",
+      "types": "./dist/src/icons/regular/index.d.ts"
     },
     "./thin": {
-      "import": "./dist/src/icons/thin.index.js",
-      "types": "./dist/src/icons/thin.index.d.ts"
+      "import": "./dist/src/icons/thin/index.js",
+      "types": "./dist/src/icons/thin/index.d.ts"
     }
   }
 }
