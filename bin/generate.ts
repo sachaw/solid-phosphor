@@ -35,14 +35,12 @@ import { PhosphorIconProps } from "../../index.js";
 export const ${icon.pascal_name}Icon: Component<PhosphorIconProps> = (props) => {
 	return (
 		<svg
-			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 256 256"
 			fill="currentColor"
 			height="24px"
 			width="24px"
 			{...props}
 		>
-      <title>${icon.name}</title>
 			${svg}
 		</svg>
 	);
