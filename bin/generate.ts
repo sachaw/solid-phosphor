@@ -9,8 +9,7 @@ const iconSrcPath = "src/icons";
 variants.map((variant) => {
   icons.map((icon) => {
     const iconPath =
-      `node_modules/@phosphor-icons/core/assets/${variant}/${icon.name}${
-        variant !== "regular" ? `-${variant}` : ""
+      `node_modules/@phosphor-icons/core/assets/${variant}/${icon.name}${variant !== "regular" ? `-${variant}` : ""
       }.svg`;
 
     const exists = existsSync(join(process.cwd(), iconPath));
@@ -37,8 +36,8 @@ export const ${icon.pascal_name}Icon: Component<PhosphorIconProps> = (props) => 
 		<svg
 			viewBox="0 0 256 256"
 			fill="currentColor"
-			height="24px"
-			width="24px"
+			height="16px"
+			width="16px"
 			{...props}
 		>
 			${svg}
